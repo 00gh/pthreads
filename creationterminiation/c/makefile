@@ -6,7 +6,7 @@ LDFLAGS=-pthread
 all: hello
 
 hello: main.o 
-	$(CC)  main.o -o hello
+	$(CC)  main.o -o hello ${LDFLAGS}
 
 main.o: main.c
 	$(CC) $(CFLAGS) -c main.c
